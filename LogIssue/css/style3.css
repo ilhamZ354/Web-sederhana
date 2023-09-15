@@ -1,0 +1,74 @@
+body{
+    background-color: #ffff;
+}.btnIsu{
+    padding: 5px;
+    background-color:#ffff;
+    border-style: none;
+    border-color: unset !important;
+    color: rgb(126, 125, 125);
+}
+button.btnIsu{
+    color: rgb(189, 189, 189);
+}
+.btnIsu:hover{
+        cursor: default;
+}
+.select{
+    background-color: unset !important;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.select select{
+    background-color: #0084FF;
+    border-style: unset !important;
+    color: #ffff;
+}
+
+.select input[type=date]{
+    background-color: #0084FF;
+    border-style: unset !important;
+    color: #ffff;
+    outline: unset !important;
+    padding:15px;
+    width: 100%;
+    border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffff;
+    padding: 5px;
+    margin-right: -6px;
+    border-radius: 2px;
+}
+/* .select select:hover{
+    background-color: #0084FF;
+} */
+.ruang-input{
+    background-color: #ffff;
+    color: #ffff;
+}
+.labelDeskripsi{
+    background-color:#0084FF ;
+    margin-top: 1%;
+}
+.file{
+    margin-top: 2%;
+}
+button#btnFile{
+    width: 100%;
+}
+
+/* tabel modal */
+.tabelModal.table-responsive {
+    overflow-x: auto;
+  }
+
+.tabelModal.table-responsive table {
+    max-width: 100%;
+  }
+
+.dataForm{
+    display: none;
+}
+.tampil{
+    display: block;
+}
