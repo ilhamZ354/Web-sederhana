@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* h1{
+    width: 20%;
+} */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#ketik {
+    overflow:hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation: typing 2.5s steps(50, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 25%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    20% {
+        border-color: orange;
+    }
+    50%{
+        border-color: transparent;
+    }
+}
+
+header {
+    background-color: #333;
+    background-image: url('/img/aurore.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    height: 120px; /* Atur tinggi header sesuai kebutuhan */
+    overflow: hidden; /* Aktifkan overflow hidden */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: #969595;
+}
+
+header h1 {
+    font-size: 24px;
+    font-family: 'Lora', serif;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover{
+    color: #cdece6;
+}
+
+nav{
+    background-color: #0f8d74;
+    opacity: 0.7;
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    overflow: auto;
+}
+
+article {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+
+h2{
+    color: #0f8d74;
+}
+
+article p{
+    margin-top: 2%;
+    font-family: 'Times New Roman';
+    line-break: normal;
+    color: #969595;
+}
+
+article img{
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+}
+aside {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+    header {
+        text-align: left;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        text-align: left;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    main{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+    article, aside{
+        width: 100%;
+    }
+}
+
+img.borobudur{
+    width: 100%;
+    height: auto;
+}
+img.aurora{
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    margin-top: 15px;
+}
